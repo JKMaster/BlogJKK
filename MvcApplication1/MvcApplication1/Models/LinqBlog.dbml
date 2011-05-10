@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BlogBase" Class="LinqBlogDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\BlogBase.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BlogBaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ustawienia" Member="ustawienias">
+    <Type Name="ustawienia">
+      <Column Name="grupa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nazwa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="wartosc" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tagi" Member="tagis">
+    <Type Name="tagi">
+      <Column Name="id_posta" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="keywords" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="post_tagi" Member="post" ThisKey="id_posta" OtherKey="ID" Type="post" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.post" Member="posts">
+    <Type Name="post">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tytul" Type="System.String" DbType="VarChar(156)" CanBeNull="true" />
+      <Column Name="tresc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="data_dodania" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="data_modyfikacji" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="post_tagi" Member="tagi" ThisKey="ID" OtherKey="id_posta" Type="tagi" Cardinality="One" />
+      <Association Name="post_komentarz" Member="komentarzs" ThisKey="ID" OtherKey="id_posta" Type="komentarz" />
+    </Type>
+  </Table>
+  <Table Name="dbo.komentarz" Member="komentarzs">
+    <Type Name="komentarz">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_posta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tresc" Type="System.String" DbType="VarChar(404) NOT NULL" CanBeNull="false" />
+      <Column Name="autor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="data_dodania" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="post_komentarz" Member="post" ThisKey="id_posta" OtherKey="ID" Type="post" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

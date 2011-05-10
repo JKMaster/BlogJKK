@@ -1,0 +1,15 @@
+c:\documents and settings\konrad\moje dokumenty\visual studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+c:\documents and settings\konrad\moje dokumenty\visual studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+c:\documents and settings\konrad\moje dokumenty\visual studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\konrad\moje dokumenty\visual studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+c:\documents and settings\konrad\moje dokumenty\visual studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+C:\Users\nowak\Desktop\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+C:\Users\nowak\Desktop\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+C:\Users\nowak\Desktop\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nowak\Desktop\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+C:\Users\nowak\Desktop\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb

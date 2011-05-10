@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/MaszTenStyl.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function wartosc() 
+        {
+            alert(txt1.value)
+            WyswietlPostyPoTagach();
+        }
+    </script>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+
+            <div id="logo">
+            
+                <div id="logindisplay">
+                    <% Html.RenderPartial("LogOnUserControl"); %>
+                </div>
+            </div> 
+
+            <div id="menucontainer">
+            
+                <ul id="menu">
+                <% if (Request.IsAuthenticated)
+                   {%>
+                    <li><%: Html.ActionLink("Dodaj", "dodajPost", "Admin")%></li>   
+                <%} %>        
+                    <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
+                    <li><%: Html.ActionLink("About", "About", "Home")%></li>
+                </ul>
+            
+            </div>
+
+            <div id="bok">
+                <div style="float: left; margin-left: 28px; font-family: Arial, Helvetica, sans-serif; margin-bottom: 15px;">
+                
+                <p>Archiwum postów:</p>
+                <%: Html.ActionLink("Styczeń", "WyswietlArchiwum", new { id=1})%><br />
+                <%: Html.ActionLink("Luty", "WyswietlArchiwum", new { id=2})%><br />
+                <%: Html.ActionLink("Marzec", "WyswietlArchiwum", new { id=3})%><br />
+                <%: Html.ActionLink("Kwiecień", "WyswietlArchiwum", new { id=4})%><br />
+                <%: Html.ActionLink("Maj", "WyswietlArchiwum", new { id=5})%><br />
+                <%: Html.ActionLink("Czerwiec", "WyswietlArchiwum", new { id=6})%><br />
+                <%: Html.ActionLink("Lipiec", "WyswietlArchiwum", new { id=7})%><br />
+                <%: Html.ActionLink("Sierpień", "WyswietlArchiwum", new { id=8})%><br />
+                <%: Html.ActionLink("Wrzesień", "WyswietlArchiwum", new { id=9})%><br />
+                <%: Html.ActionLink("Pażdziernik", "WyswietlArchiwum", new { id=10})%><br />
+                <%: Html.ActionLink("Listopad", "WyswietlArchiwum", new { id=11})%><br />
+                <%: Html.ActionLink("Grudzień", "WyswietlArchiwum", new { id=12})%><br />
+                
+                <p>Szukaj po tagach:</p>
+                <%--<asp:TextBox ID="tb1" runat="server" Width="138px"></asp:TextBox><br />--%>
+                <INPUT TYPE=text VALUE="" NAME="txt1">
+                <%--<% string s = ; %>--%>
+               <%-- <%: Html.ActionLink("Szukaj", "WyswietlPostyPoTagach", new {slowo = s})%><br />--%>
+                <%--<input type="button" value="Submit" onclick="WyswietlPostyPoTagach(tb1.Text %)" />--%>
+
+                </div>
+
+                <div id="main">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+
+            <div id="footer">
+            Stopy się nie świecą.
+            </div>
+    </div>
+
+    </form>
+
+</body>
+</html>

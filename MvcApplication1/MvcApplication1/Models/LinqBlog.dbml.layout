@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqBlog">
+  <DataContextMoniker Name="/LinqBlogDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c2a361c8-6d53-449d-a170-4d3f7f0f237b" absoluteBounds="4, 2.25, 2, 1.26050048828125">
+      <DataClassMoniker Name="/LinqBlogDataContext/ustawienia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2baa635-7cc5-49f9-98ba-6fbe36709963" absoluteBounds="4.015, 2.71, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5928a82-5ed4-4ff2-ae78-dbadab3c9bc9" absoluteBounds="4.5, 1, 2, 1.26050048828125">
+      <DataClassMoniker Name="/LinqBlogDataContext/tagi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc9d310e-aed5-456e-b350-70f58f3dc1e4" absoluteBounds="4.515, 1.46, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bff6924-0de1-4554-921b-15129fc662dd" absoluteBounds="1.625, 1.375, 2, 1.75354248046875">
+      <DataClassMoniker Name="/LinqBlogDataContext/post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23ee9ec7-e379-411d-9d61-5145b9839cef" absoluteBounds="1.6400000000000001, 1.835, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 1.78125); (4.5 : 1.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqBlogDataContext/post/post_tagi" />
+      <nodes>
+        <classShapeMoniker Id="9bff6924-0de1-4554-921b-15129fc662dd" />
+        <classShapeMoniker Id="d5928a82-5ed4-4ff2-ae78-dbadab3c9bc9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="694e071d-8cea-4461-82a6-ba3308564995" absoluteBounds="2, 4.125, 2, 1.75354248046875">
+      <DataClassMoniker Name="/LinqBlogDataContext/komentarz" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e574d69-fac8-43cb-a752-30ada59d1d71" absoluteBounds="2.015, 4.585, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.8125 : 3.12854248046875); (2.8125 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqBlogDataContext/post/post_komentarz" />
+      <nodes>
+        <classShapeMoniker Id="9bff6924-0de1-4554-921b-15129fc662dd" />
+        <classShapeMoniker Id="694e071d-8cea-4461-82a6-ba3308564995" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

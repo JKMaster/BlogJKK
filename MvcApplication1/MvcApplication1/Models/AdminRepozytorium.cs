@@ -41,7 +41,7 @@ namespace MvcApplication1.Models
             {
                 using (LinqBlogDataContext dp = new LinqBlogDataContext())
                 {
-                    return (from p in dp.posts where p.status == 1 orderby p.ID descending select p).ToList<post>();
+                    return (from p in dp.posts where p.status == 1 && p.data_dodania.Month == DateTime.Now.Month orderby p.ID descending select p).ToList<post>();
                 }
             }
 
@@ -61,6 +61,16 @@ namespace MvcApplication1.Models
                 {
                     var PostyPoSlowie = from p in dp.posts where p.tagi.keywords == slowo select p;
                     return PostyPoSlowie.ToList<post>();
+                }
+
+            }
+
+            public List<post> WyswietlTytul(string slowo)
+            {
+                using (LinqBlogDataContext dp = new LinqBlogDataContext())
+                {
+                    var PostyT = from p in dp.posts where p.tytul == slowo select p;
+                    return PostyT.ToList<post>();
                 }
 
             }

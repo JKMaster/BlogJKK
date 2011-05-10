@@ -99,6 +99,8 @@
     <Content Include="Views\Admin\dodajPost.aspx" />
     <Content Include="Views\Admin\edytujPost.aspx" />
     <Content Include="Views\Home\dodajKomentarz.aspx" />
+    <Content Include="Views\Home\PoTytule.aspx" />
+    <Content Include="Views\Home\Test2.aspx" />
     <Content Include="Views\Home\WyswietlArchiwum.aspx" />
     <Content Include="Views\Home\wyswietlKomentarze.aspx" />
     <Content Include="Views\Home\WyswietlPostyPoTagach.aspx" />

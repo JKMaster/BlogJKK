@@ -13,3 +13,8 @@ D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplicatio
 D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
 D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
 D:\dokumenty kopia\Moje dokumenty\Pcz\semestr VIII\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+G:\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+G:\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+G:\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+G:\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+G:\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb

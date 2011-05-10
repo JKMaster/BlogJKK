@@ -86,7 +86,21 @@ namespace MvcApplication1.Controllers
 
         public ActionResult WyswietlPostyPoTagach(string slowo)
         {
+            //string slowos = (string)ViewData["slowo"];
             ViewData["poTagach"] = _admin.WyswietlPoTagach(slowo);
+            return View();
+        }
+
+        public ActionResult Test2(int id, int id2)
+        {
+            ViewData["id"] = id;
+            ViewData["id2"] = id2;
+            return View();
+        }
+
+        public ActionResult PoTytule(string tytul2, int id)
+        {
+            ViewData["t"] = _admin.WyswietlTytul(tytul2);
             return View();
         }
 

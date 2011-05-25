@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,7 @@ namespace MvcApplication1.Controllers
                 return View(k);
         }
 
+//edytuj post 
         [HttpPost]
         public ActionResult edytujPost(post k)
         {
